@@ -128,7 +128,7 @@ if __name__ == '__main__':
     Obtain the API key from https://serpapi.com/
     """
     setup_logging()
-    api_key = "fef908713d9413f179fe7a8ad547f737155312dfcab73904b139d608ed6b4b9e"
+    api_key = "YOUR API KEY"
 
     """
     relevance mode: query the most relevant papers as returned by Google Scholar
@@ -137,12 +137,12 @@ if __name__ == '__main__':
     search_mode = 'year'  # 'relevant' or 'year
     MAX_PAGE = 1
 
-    file_path = '/Users/zhuoliyin/Library/CloudStorage/OneDrive-purdue.edu/Academic project/15a_NLP-for-LCA/LLM-assisted-LCA/search_query.csv'  # CSV file path
+    file_path = './search_query.csv'  # CSV file path
     TOPIC = 'wind turbine system'  # topic to search
     queries = load_queries_from_csv(file_path, topic=TOPIC)
 
     # Load the updated dataset
-    file_path = '/Users/zhuoliyin/Library/CloudStorage/OneDrive-purdue.edu/Academic project/15a_NLP-for-LCA/LLM-assisted-LCA/LCA_publication_per_year_rounded.csv'  # Path to the updated dataset
+    file_path = './LCA_publication_per_year_rounded.csv'  # Path to the updated dataset
     rounded_publication_data = load_rounded_publication_data(file_path)
 
     serpapi_search(queries, api_key, search_mode, rounded_publication_data)
