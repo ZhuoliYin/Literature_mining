@@ -411,7 +411,7 @@ class AcademicPaperParser:
 
 if __name__ == '__main__':
     PUBLISHER = 'IEEE'  # '' Springer
-    API_KEY = {'Elsevier': 'fedd08d2802b3b824299df99a9f9e0c4', 'Springer': 'ba80a483c4395a76e464022949db9d5a', 'IEEE': 'drhe2kgc5mqszmqm5c6hurhe'}
+    API_KEY = {'Elsevier': 'YOUR API KEY', 'Springer': 'YOUR API KEY', 'IEEE': 'YOUR API KEY'}
 
     # API URL will be filled with API Key and DOI, respectively
     API_URL = {'Elsevier': 'https://api.elsevier.com/content/article/doi/%s?APIKey=%s',
@@ -420,7 +420,7 @@ if __name__ == '__main__':
 
 
     paper_info_df = pd.read_csv(
-        '/Volumes/negishi-scratch/NLP_for_LCA/Auto-LCA/eligibility_crossref_wind_turbine_system_1993_2022_year_elsevier_springer_IEEE_abstract_added.csv')
+        './eligibility_crossref_wind_turbine_system_1993_2022_year_elsevier_springer_IEEE_abstract_added.csv')
     paper_info_df = paper_info_df.fillna(0)
 
     # only keep the papers published by the specified publisher
@@ -444,7 +444,7 @@ if __name__ == '__main__':
         if PUBLISHER == 'IEEE':
             time.sleep(0.1)
 
-        parser = AcademicPaperParser(PUBLISHER, API_KEY[PUBLISHER], API_URL[PUBLISHER], f'/Users/zhuoliyin/Library/CloudStorage/OneDrive-purdue.edu/Academic project/15a_NLP-for-LCA/LLM-assisted-LCA/collect_and_parse_papers/json_results/{PUBLISHER}', doi)
+        parser = AcademicPaperParser(PUBLISHER, API_KEY[PUBLISHER], API_URL[PUBLISHER], f'./{PUBLISHER}', doi)
         xml_data = parser.fetch_paper_data(doi)
         if xml_data:
             try:
