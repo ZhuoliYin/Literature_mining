@@ -1,0 +1,193 @@
+# Conference Hosting Reference — Comprehensive Year-by-Year Map
+# Update this reference to map on which platform a conference is hosted on each year
+# We would like to use OpenReview (OR) as the primary paper retrieval source
+# Routing to the corresponding proceedings if a conference is not hosted on OR.
+# Based on exhaustive web search of OpenReview group pages, API docs,
+# official Call for Papers, and DBLP/proceedings sites.
+# Last verified: March 2026
+#
+# Legend:
+#   OR  = OpenReview (primary submission/review system)
+#   OJS = AAAI OJS (ojs.aaai.org)
+#   CMT = Microsoft CMT
+#   PMLR = Proceedings of Machine Learning Research (proceedings.mlr.press)
+#   NP  = NeurIPS Proceedings (proceedings.neurips.cc / papers.nips.cc)
+#   ACL = ACL Anthology (aclanthology.org)
+#   IJCAI-P = IJCAI Proceedings (ijcai.org/proceedings)
+#   ARR = ACL Rolling Review (on OpenReview, but different group structure)
+#
+# ═══════════════════════════════════════════════════════════════════════
+# ICLR — OpenReview since inception (2013)
+# ═══════════════════════════════════════════════════════════════════════
+#
+# Year  Submission System    OpenReview Group ID                     Invitation Pattern              Notes
+# ----  ------------------   ------------------------------------    ----------------------------    -----
+# 2013  OR (API v1)          ICLR.cc/2013                           ICLR.cc/2013/-/submission       No "conference" sub-group; flat
+#                                                                                                    structure. Lowercase invitation.
+# 2014  OR (API v1)          ICLR.cc/2014                           ICLR.cc/2014/-/submission       Also: /-/submission/conference,
+#                                                                    ICLR.cc/2014/-/submission/workshop
+# 2015  OR (API v1)          ICLR.cc/2015                           (unknown, likely lowercase)     Sparse data; may need API probe
+# 2016  OR (API v1)          ICLR.cc/2016                           ICLR.cc/2016/workshop/-/submission  Lowercase "workshop" confirmed
+# 2017  OR (API v1)          ICLR.cc/2017/conference (LOWERCASE!)   ICLR.cc/2017/conference/-/submission  Lowercase "conference" confirmed
+# 2018  OR (API v1)          ICLR.cc/2018/Conference                ICLR.cc/2018/Conference/-/Blind_Submission   First year with uppercase
+# 2019  OR (API v1)          ICLR.cc/2019/Conference                Blind_Submission                Standard from here on
+# 2020  OR (API v1→v2)       ICLR.cc/2020/Conference                Blind_Submission                Virtual year; special schedule
+# 2021  OR (API v2)          ICLR.cc/2021/Conference                Blind_Submission
+# 2022  OR (API v2)          ICLR.cc/2022/Conference                Blind_Submission
+# 2023  OR (API v2)          ICLR.cc/2023/Conference                Submission (no more Blind_)     Switched from Blind_ to plain
+# 2024  OR (API v2)          ICLR.cc/2024/Conference                Submission
+# 2025  OR (API v2)          ICLR.cc/2025/Conference                Submission
+# 2026  OR (API v2)          ICLR.cc/2026/Conference                Submission
+#
+# Fallback: None (OpenReview IS the canonical/only source for ICLR)
+#
+# ═══════════════════════════════════════════════════════════════════════
+# ICML — PMLR historically, OpenReview since 2023
+# ═══════════════════════════════════════════════════════════════════════
+#
+# Year  Submission System    OpenReview Group ID                     Proceedings          Notes
+# ----  ------------------   ------------------------------------    ---------            -----
+# ≤2019 CMT / own system     Not on OR (only workshops)              PMLR only            Main track NOT on OpenReview
+#       (workshops only)     ICML.cc/2013/PeerReview/-/submission
+#                            ICML.cc/2018/Workshop/NAMPI/-/Submission
+#                            ICML.cc/2019/Conference (existed for workshops only)
+# 2020  CMT                  ICML.cc/2020/Conference (workshops)     PMLR
+# 2021  CMT                  ICML.cc/2021/... (workshops)            PMLR
+# 2022  CMT                  ICML.cc/2022/... (workshops only)       PMLR
+# 2023  OR (API v2)          ICML.cc/2023/Conference                 PMLR + OR            First year main track on OpenReview!
+# 2024  OR (API v2)          ICML.cc/2024/Conference                 PMLR + OR
+# 2025  OR (API v2)          ICML.cc/2025/Conference                 PMLR + OR
+# 2026  OR (API v2)          ICML.cc/2026/Conference                 PMLR + OR
+#
+# Fallback: PMLR (proceedings.mlr.press) for all years
+#
+# ═══════════════════════════════════════════════════════════════════════
+# NeurIPS — proceedings.neurips.cc historically, OpenReview since 2021
+# ═══════════════════════════════════════════════════════════════════════
+#
+# Year  Submission System    OpenReview Group ID                     Proceedings          Notes
+# ----  ------------------   ------------------------------------    ---------            -----
+# ≤2016 CMT                  Not on OR                               papers.nips.cc       Called "NIPS"
+# 2017  CMT                  NIPS.cc/2017/Workshop/Autodiff etc.     papers.nips.cc       Only workshops on OR. Name: NIPS
+#                            (workshops only, not main track)
+# 2018  CMT                  Not on OR for main track                proceedings.neurips.cc  Rebranded to NeurIPS
+# 2019  CMT                  Not on OR for main track                proceedings.neurips.cc
+# 2020  CMT                  Not on OR for main track                proceedings.neurips.cc
+# 2021  OR (API v1→v2)       NeurIPS.cc/2021/Conference              proceedings.neurips.cc  First year main track on OpenReview
+# 2022  OR (API v2)          NeurIPS.cc/2022/Conference              proceedings.neurips.cc  Some API v2 issues noted (GitHub #276)
+# 2023  OR (API v2)          NeurIPS.cc/2023/Conference              proceedings.neurips.cc
+# 2024  OR (API v2)          NeurIPS.cc/2024/Conference              proceedings.neurips.cc
+# 2025  OR (API v2)          NeurIPS.cc/2025/Conference              proceedings.neurips.cc
+#
+# Fallback: proceedings.neurips.cc (all years, including 1987-present)
+#           papers.nips.cc (older alias, still works)
+#
+# ═══════════════════════════════════════════════════════════════════════
+# AAAI — OJS historically, OpenReview since 2025
+# ═══════════════════════════════════════════════════════════════════════
+#
+# Year  Submission System    OpenReview Group ID                     Proceedings          Notes
+# ----  ------------------   ------------------------------------    ---------            -----
+# ≤2023 CMT/EasyChair        Not on OR                               ojs.aaai.org         AAAI used CMT or EasyChair
+# 2024  CMT                  Not on OR (spring symposia only)        ojs.aaai.org         Some spring symposia on OR
+#                            AAAI.org/2024/Spring_Symposium_Series/...
+# 2025  OR (API v2)          AAAI.org/2025/Conference                ojs.aaai.org + OR    First year MAIN TRACK on OpenReview!
+# 2026  OR (API v2)          AAAI.org/2026/Conference                TBD                  Confirmed: OpenReview for submissions
+#
+# Fallback: ojs.aaai.org (all years through at least 2024)
+#           proceedings.aaai.org (newer proceedings system)
+#
+# ═══════════════════════════════════════════════════════════════════════
+# ACL — ACL Anthology historically; ACL Rolling Review (ARR) on OR since 2021
+# ═══════════════════════════════════════════════════════════════════════
+#
+# Year  Submission System    OpenReview Group ID                     Proceedings          Notes
+# ----  ------------------   ------------------------------------    ---------            -----
+# ≤2020 Softconf/START       Not on OR                               aclanthology.org     Traditional submission system
+# 2021  ARR on OR            aclweb.org/ACL/ARR/2021/...             aclanthology.org     ARR launched mid-2021
+# 2022  ARR on OR            aclweb.org/ACL/ARR/2022/{Month}         aclanthology.org     Rolling monthly cycles
+# 2023  ARR on OR            aclweb.org/ACL/ARR/2023/{Month}         aclanthology.org
+# 2024  ARR on OR            aclweb.org/ACL/ARR/2024/{Month}         aclanthology.org     ACL, EACL, NAACL, EMNLP all use ARR
+#                            aclweb.org/ACL/2024/ARR_Commitment                           Commitment venue for accepted papers
+#                            aclweb.org/ACL/2024/Conference                               Direct conference group
+# 2025  ARR on OR            aclweb.org/ACL/ARR/2025/{Month}         aclanthology.org
+#                            aclweb.org/ACL/2025/Conference
+#
+# Complexity: ACL uses rolling review (ARR). Papers submit to ARR monthly,
+# then "commit" to a specific conference (ACL, NAACL, EMNLP, etc.).
+# The commitment venue ID is: aclweb.org/ACL/{year}/ARR_Commitment
+# The conference group is: aclweb.org/ACL/{year}/Conference
+#
+# Fallback: aclanthology.org (all years, definitive proceedings)
+#
+# ═══════════════════════════════════════════════════════════════════════
+# IJCAI — CMT historically, workshops-only on OpenReview
+# ═══════════════════════════════════════════════════════════════════════
+#
+# Year  Submission System    OpenReview Group ID                     Proceedings          Notes
+# ----  ------------------   ------------------------------------    ---------            -----
+# ≤2023 CMT                  Not on OR                               ijcai.org/proceedings Main track uses CMT
+# 2024  CMT                  ijcai.org/IJCAI/2024 (WORKSHOPS only)  ijcai.org/proceedings Only workshops on OR
+#                            ijcai.org/IJCAI/2024/Workshop/AIGOV
+#                            ijcai.org/IJCAI/2024/Workshop/AI4Research
+#                            etc.
+# 2025  CMT                  ijcai.org/IJCAI/2025 (WORKSHOPS only)  ijcai.org/proceedings Confirmed: CMT for main track
+#                            ijcai.org/IJCAI/2025/Workshop/GLOW                           "supplementary files in the CMT system"
+#                            ijcai.org/IJCAI/2025/Workshop/CFD
+#                            etc.
+#
+# IMPORTANT: IJCAI main track is NOT on OpenReview as of 2025.
+#            Only workshops use OpenReview.
+#            The main track uses CMT (cmt3.research.microsoft.com).
+#
+# Fallback: ijcai.org/proceedings (all years, definitive source)
+#
+# ═══════════════════════════════════════════════════════════════════════
+# SUMMARY: OpenReview group ID patterns to try (in order)
+# ═══════════════════════════════════════════════════════════════════════
+#
+# ICLR:
+#   {conf}.cc/{year}/Conference              → 2018+
+#   {conf}.cc/{year}/conference              → 2017
+#   {conf}.cc/{year}                         → 2013-2016 (flat, no sub-group)
+#
+# ICML:
+#   {conf}.cc/{year}/Conference              → 2023+
+#   (skip OpenReview for ≤2022, go straight to PMLR)
+#
+# NeurIPS:
+#   NeurIPS.cc/{year}/Conference             → 2021+
+#   (skip OpenReview for ≤2020, go straight to proceedings.neurips.cc)
+#   NIPS.cc/{year}/...                       → only workshops for ≤2017
+#
+# AAAI:
+#   AAAI.org/{year}/Conference               → 2025+
+#   (skip OpenReview for ≤2024, go straight to OJS)
+#
+# ACL:
+#   aclweb.org/ACL/{year}/Conference         → 2021+ (conference group)
+#   aclweb.org/ACL/{year}/ARR_Commitment     → 2024+ (commitment venue)
+#   aclweb.org/ACL/ARR/{year}/{Month}        → 2021+ (ARR rolling review)
+#   (skip OpenReview for ≤2020, go straight to ACL Anthology)
+#
+# IJCAI:
+#   NOT ON OPENREVIEW for main track (any year)
+#   Go straight to ijcai.org/proceedings
+#
+# ═══════════════════════════════════════════════════════════════════════
+# INVITATION SUFFIX patterns (in order of priority)
+# ═══════════════════════════════════════════════════════════════════════
+#
+# Modern (2018+):
+#   Blind_Submission     → ICLR 2018-2022, NeurIPS 2021-2022
+#   Submission           → ICLR 2023+, ICML 2023+, NeurIPS 2023+, AAAI 2025+
+#   Submitted            → rare alternate
+#
+# Legacy (≤2017):
+#   submission           → ICLR 2013-2017 (lowercase!)
+#   blind_submission     → possible variant
+#
+# Very early ICLR (2013-2014) used non-standard paths:
+#   ICLR.cc/2013/-/submission                (no conference sub-group)
+#   ICLR.cc/2014/-/submission/conference     (slash-separated variant)
+#   ICLR.cc/2014/-/submission/workshop
